@@ -1,0 +1,226 @@
+---
+import Avatar from "../small-components/Avatar.astro";
+import AvatarMobile from "../small-components/AvatarMobile.astro";
+import KeynoteCard from "../small-components/KeynoteCard.astro";
+import SubHeading from "../small-components/SubHeading.astro";
+---
+
+<div class="mt-[40px] md:mt-[50px] 2xl:mt-[100px]">
+  <SubHeading title="keynote speakers" />
+
+  <div
+    class="flex md:flex-row px-[20px] md:px-0 flex-col my-[40px] md:my-[30px] justify-center items-center lg:items-start gap-10 lg:justify-between lg:gap-[60px] 2xl:gap-[112px] lg:mt-[55px] lg:mb-[100px]"
+  >
+    <KeynoteCard
+      src="/assets/img/png/avatar-1.png"
+      name="Mohammed H. AlAbbadi"
+      pos="Senior Vice President - Engineering Services Saudi Aramco"
+      id="0_3_2"
+    />
+    <KeynoteCard
+      src="/assets/img/png/avatar-2.png"
+      name="Mohammed H. "
+      pos="Senior Vice President - Engineering Services Saudi Aramco"
+      id="0_3_1"
+    />
+  </div>
+  <div class="bg-[#E0F6FF] w-full relative 2xl:h-[789px]">
+    <img
+      src="/assets/img/svg/pattern-speakers.svg"
+      alt=""
+      class="absolute top-0 right-0"
+    />
+    <div
+      class="lg:pt-[100px] pt-[40px] gap-[25px] hidden w-full md:pt-[50px] xl:pt-[128px] md:px-1 2xl:pl-[81px] 2xl:pr-[161px] md:grid md:grid-cols-2 xl:grid-cols-4 z-10 md:gap-[30px] px-[13px]"
+    >
+      <Avatar
+        src="/assets/img/speakers/speaker-1.avif"
+        name="James Rock"
+        pos="Founder & CEO"
+        com="Saudi Aramco"
+      />
+
+      <Avatar
+        src="/assets/img/speakers/speaker-3.avif"
+        name="James Rock"
+        pos="Founder & CEO"
+        com="Saudi Aramco"
+      />
+      <Avatar
+        src="/assets/img/speakers/speaker-4.avif"
+        name="James Rock"
+        pos="Founder & CEO"
+        com="Saudi Aramco"
+      />
+      <Avatar
+        src="/assets/img/speakers/speaker-1.jpg"
+        name="James Rock"
+        pos="Founder & CEO"
+        com="Saudi Aramco"
+      />
+    </div>
+
+    <!-- strat mobile  -->
+    <div class="flex flex-col m-auto p-auto md:hidden relative">
+      <div class="flex overflow-x-scroll pt-[40px] scrollbar-hidden">
+        <div class="flex flex-nowrap justify-between">
+          <div class="inline-block w-screen">
+            <div
+              class="overflow-hidden w-screen transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex px-[15px] gap-[10px] justify-center w-full">
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-1.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-1.jpg"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="inline-block w-screen">
+            <div
+              class="overflow-hidden w-screen transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex px-[15px] gap-[10px] justify-center w-full">
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-3.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-4.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="inline-block w-screen">
+            <div
+              class="overflow-hidden w-screen transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex px-[15px] gap-[10px] justify-center w-full">
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-1.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-4.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-[-57px] left-1/2"
+        id="carouselIndicators"
+      >
+        <button
+          type="button"
+          class="w-2 h-2 rounded-full bg-[#4081B3]"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button
+          type="button"
+          class="w-2 h-2 rounded-full bg-white/50"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button
+          type="button"
+          class="w-2 h-2 rounded-full bg-white/50"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+      </div>
+    </div>
+
+    <!-- end -->
+
+    <div
+      class="pt-[100px] pb-[39px] md:py-[100px] px-[43px] flex justify-center"
+    >
+      <button
+        class="2xl:pl-[57px] text-center xl:px-[60px] 2xl:pr-[53px] 2xl:py-[9px] lg:px-[20px] lg:py-[7px] border linear-gradient-button parallelogram hover:bg-transparent group relative inline-flex items-center justify-start overflow-hidden"
+      >
+        <span
+          class="w-full h-48 rounded bg-white absolute bottom-[-40px] right-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
+        ></span>
+        <span
+          class="px-[65px] md:px-[115px] py-[9px] md:py-[12px] text-center uppercase skew-fix text-[16px] md:text-[22px] text-white group-hover:text-[#4081B3] transition-colors duration-700 ease-in-out"
+          >View All Speakers</span
+        >
+      </button>
+    </div>
+  </div>
+</div>
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    const carouselWrapper = document.querySelector(".overflow-x-scroll");
+    const indicators = document.querySelectorAll("#carouselIndicators button");
+
+    // Function to scroll to a specific slide
+    function scrollToSlide(index) {
+      const slideWidth = window.innerWidth;
+      console.log("slidewidth =>", slideWidth);
+      carouselWrapper.scrollTo({
+        left: index * slideWidth,
+        behavior: "smooth",
+      });
+
+      // Update indicators
+      indicators.forEach((indicator, i) => {
+        if (i === index) {
+          indicator.classList.add("bg-[#4081B3]");
+          indicator.classList.remove("bg-white/50");
+          indicator.setAttribute("aria-current", "true");
+        } else {
+          indicator.classList.add("bg-white/50");
+          indicator.classList.remove("bg-[#4081B3]");
+          indicator.setAttribute("aria-current", "false");
+        }
+      });
+    }
+
+    // Add event listeners to indicators
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener("click", () => {
+        scrollToSlide(index);
+      });
+    });
+
+    // Update indicators on scroll
+    carouselWrapper.addEventListener("scroll", () => {
+      const slideWidth = carouselWrapper.offsetWidth;
+      const currentSlide = Math.round(carouselWrapper.scrollLeft / slideWidth);
+
+      indicators.forEach((indicator, index) => {
+        if (index === currentSlide) {
+          indicator.classList.add("bg-[#4081B3]");
+          indicator.classList.remove("bg-white/50");
+          indicator.setAttribute("aria-current", "true");
+        } else {
+          indicator.classList.add("bg-white/50");
+          indicator.classList.remove("bg-[#4081B3]");
+          indicator.setAttribute("aria-current", "false");
+        }
+      });
+    });
+  });
+</script>
